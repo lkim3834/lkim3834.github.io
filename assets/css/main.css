@@ -2638,7 +2638,8 @@ input, select, textarea {
 		.image.main {
 			display: block;
 			margin: 4rem auto;
-			width: 50%;
+			width: 20%;
+			height: auto;
 		}
 
 			.image.main:first-child {
@@ -2690,6 +2691,7 @@ input, select, textarea {
 		list-style: none;
 		margin-left: -1rem;
 		padding-left: 0;
+		font-size: 50px;  /* Adjust the size as needed */
 	}
 
 		ul.actions li {
@@ -2704,6 +2706,7 @@ input, select, textarea {
 			justify-content: center;
 			width: 100%;
 			margin-left: 0;
+			
 		}
 
 			ul.actions.special li:first-child {
@@ -3350,7 +3353,7 @@ input, select, textarea {
 		#intro hr {
 			border-bottom-color: #ffffff;
 		}
-
+        
 		#intro input[type="submit"],
 		#intro input[type="reset"],
 		#intro input[type="button"],
