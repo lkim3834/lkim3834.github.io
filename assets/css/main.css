@@ -2321,6 +2321,12 @@ input, select, textarea {
 		text-transform: uppercase;
 		margin: 0 0 0.75rem 0;
 	}
+    .reviewGit {
+		display: block;
+		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-size: 3rem;
+		
+	}
 
 		@media screen and (max-width: 980px) {
 
@@ -2915,6 +2921,7 @@ input, select, textarea {
 
 	header {
 		cursor: default;
+		
 	}
 
 		header > .date {
@@ -2927,6 +2934,13 @@ input, select, textarea {
 
 		header > p {
 			font-style: italic;
+		}
+		header > #job{
+			display: block;
+			font-size: 0.8rem;
+			height: 1;
+			margin: 0 0 1rem 0;
+			position: relative;
 		}
 
 		header > h1 + p {
@@ -2963,7 +2977,40 @@ input, select, textarea {
 				margin-top: 0;
 				text-align: center;
 			}
+			header.major>.review {
+				border: 2px solid #ccc; /* Creates a gray border */
+				align-items: center; /* Centers the content horizontally */
+        text-align: center;
+				padding: 20px;          /* Adds padding inside the border */
+				border-radius: 10px;     /* Rounds the corners of the border */
+				margin-bottom: 20px;     /* Adds space between each article */
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for a 3D effect */
+				display: flex;
+				flex-direction: column;
+				position: relative; /* Needed for absolute positioning of buttons */
+				max-width: 100%;
+				height: 740px; /* Adjust this value according to your layout */
+				overflow: hidden; /* Hide anything that overflows */
 
+			}
+			#info {
+				height: 250px;
+				overflow: hidden;      /* Hide text that exceeds max height */
+				font-size: 15px;
+				
+			}
+			header.major > .button-container {
+				position: absolute;
+				bottom: 10px; /* Distance from the bottom of the article */
+				left: 50%;
+				transform: translateX(-50%);
+				display: flex;
+				justify-content: space-between;
+				width: 90%; /* Adjust the width of the button container */
+			}
+			
+			
+			
 			header.major > .date {
 				font-size: 1rem;
 				margin: 0 0 4rem 0;
