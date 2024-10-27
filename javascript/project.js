@@ -82,10 +82,10 @@ const reviews = [
   const info = document.getElementById('info');
   
   const git = document.getElementById('github')
-  const link = document.querySelector('.reviewGit')
+  const imageGit = document.querySelector('.reviewGit')
   const prevBtn = document.querySelector('.prev-btn');
   const nextBtn = document.querySelector('.next-btn');
-  
+  const link =  document.querySelector('.link');
   // set starting item
   let currentItem = 0;
   
@@ -123,9 +123,11 @@ const reviews = [
     
       if(item.git){
         git.style.display = "block";
-        console.log(link);
+        console.log(imageGit.href);
+        imageGit.href = item.git; 
+        console.log(imageGit.href);
+        console.log(imageGit);
         link.href = item.git; 
-       
   
       }else{
         git.style.display = "none";
